@@ -26,6 +26,10 @@ markdown: redcarpet
 highlighter: pygments
 permalink: "/blog/:title/"
 
+# Pagination
+paginate: 2
+paginate_path: "/blog/page:num/"
+
 # Set the Sass partials directory, as we're using @imports
 sass:
     sass_dir: _sass
