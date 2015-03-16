@@ -1,0 +1,81 @@
+/* Clip text element */
+.clip-text {
+    font-family: "Open Sans Condensed";
+    font-size: 14rem;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    /* Color fallback */
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+/* Background */
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+/* Text Background */
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    background-color: #FFF;
+}
+
+.clip-text_one {
+    background-image: url(http://i.imgur.com/KCa8KHY.png);
+}
+
+
+
+.wrapper-masthead {
+    text-align: center;
+    background-color: $primary-color;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 5px solid $secondary-color;
+    color: #FFFFFF;
+    a {
+        color: #FFFFFF;
+    }
+}
+
+.site-info {
+    a {
+        text-decoration: none;
+    }
+}
+
+.site-title {
+
+}
+
+.site-nav {
+    a {
+        text-decoration: none;
+        font-size: 2.2rem;
+        margin: 0 1rem 0 1rem;
+        padding: 0.6rem;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

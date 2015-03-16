@@ -8,6 +8,8 @@ name: Diarmuid.ie
 # Short bio or description (displayed in the header)
 description: The online home of diarmuid.ie
 
+avatar: http://www.gravatar.com/avatar/5c4b1939bded62f14f7f8b249b9fffda.png?s=200
+
 # Set the timezone used for posts
 timezone: Europe/Dublin
 
@@ -35,6 +37,7 @@ paginate_path: "/blog/page:num/"
 sass:
     sass_dir: _sass
     style: :compressed
+    sourcemap: :true
 
 # Use the following plug-ins
 gems:
