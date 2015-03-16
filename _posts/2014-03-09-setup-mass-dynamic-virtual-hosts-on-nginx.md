@@ -20,56 +20,60 @@ There are a few example of how to setup dynamic virtual hosts on Nginx, but none
 
 To setup this in nginx all you have to do is edit your default nginx server config file (usually `/etc/nginx/sites-enabled/default`) in a text editor (I use VIM) to look like the below (changing where necessary to suit your setup):
 
-    # www Redirect to non-www
+{% highlight nginx %}
+# www Redirect to non-www
 
-    server {
-      # don't forget to tell on which port this server listens
-      listen 80;
+server {
+  # don't forget to tell on which port this server listens
+  listen 80;
 
-      # listen on the www host
-      server_name ~^(www\.)(?<domain>.+)$;
+  # listen on the www host
+  server_name ~^(www\.)(?<domain>.+)$;
 
-      # and redirect to the non-www host (declared below)
-      return 301 $scheme://$domain$request_uri;
-    }
+  # and redirect to the non-www host (declared below)
+  return 301 $scheme://$domain$request_uri;
+}
 
 
-    # Nginx Dynamic Hosts
+# Nginx Dynamic Hosts
 
-    server {
+server {
 
-      listen 80;
+  listen 80;
 
-      # catch all non-www domains
-      server_name ~(?<domain>.+)$;
+  # catch all non-www domains
+  server_name ~(?<domain>.+)$;
 
-      root /var/www/$domain/public_html/;
-      access_log /var/log/nginx/$domain/logs/access.log;
+  root /var/www/$domain/public_html/;
+  access_log /var/log/nginx/$domain/logs/access.log;
 
-      location / {
-        index index.html index.htm index.php;
-      }
+  location / {
+    index index.html index.htm index.php;
+  }
 
-      location ~ [^/]\.php(/|$) {
-        fastcgi_split_path_info ^(.+?\.php)(/.*)$;
-        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        fastcgi_pass unix:/var/run/php5-fpm.sock;
-        fastcgi_index index.php;
-        include fastcgi_params;
-      }
-    }
+  location ~ [^/]\.php(/|$) {
+    fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    fastcgi_pass unix:/var/run/php5-fpm.sock;
+    fastcgi_index index.php;
+    include fastcgi_params;
+  }
+}
+{% endhighlight %}
 
 you can easily override this default server config on a case by case basis by creating a new server block where you explicitly define the server_name. Nginx will load this server config before a server_name matched with regular expressions (As defined in the [docs](http://nginx.org/en/docs/http/server_names.html)):
 
-    server {
-      # don't forget to tell on which port this server listens
-      listen 80;
+{% highlight nginx %}
+server {
+  # don't forget to tell on which port this server listens
+  listen 80;
 
-      # explicitly list the server_name
-      server_name example2.com;
+  # explicitly list the server_name
+  server_name example2.com;
 
-      ...
+  ...
 
-    }
+}
+{% endhighlight %}
 
 The above examples were built based on the information from [NGINX dynamically configured mass virtual hosting](http://syshero.org/post/68729802960/nginx-dynamically-configured-mass-virtual-hosting) and [Nginx HTTP server boilerplate configs](https://github.com/h5bp/server-configs-nginx).

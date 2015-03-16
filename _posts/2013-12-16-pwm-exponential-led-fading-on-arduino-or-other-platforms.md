@@ -9,21 +9,23 @@ tags:
 ---
 For a project I am working on I needed to dim a LED strip light using the PWM (pulse width modulated) outputs on an Arduino. The most straightforward way to do this would have been to linearly vary the output frequency. Shown below in an Arduino sketch:
 
-    // Use pin 9 as the PWM output
-    const int outputPin = 9;
+{% highlight c++ %}
+// Use pin 9 as the PWM output
+const int outputPin = 9;
 
-    void setup() {
-      // Set the pin as a digital output
-      pinMode(outputPin, OUTPUT);
-    }
+void setup() {
+  // Set the pin as a digital output
+  pinMode(outputPin, OUTPUT);
+}
 
-    void loop() {
-      // Fade the brightness from 0 (min) to 255 (max) with 40ms delay per step
-      for (int brightness = 0; brightness <= 255; brightness++) {
-        analogWrite(outputPin, brightness);
-        delay(40);
-      }
-    }
+void loop() {
+  // Fade the brightness from 0 (min) to 255 (max) with 40ms delay per step
+  for (int brightness = 0; brightness <= 255; brightness++) {
+    analogWrite(outputPin, brightness);
+    delay(40);
+  }
+}
+{% endhighlight %}
 
 However the light outputted by the LED does not scale linearly. If you were to use the very scientific metric of "Perceived Brightness"  vs. time for the above sketch it would look something like the below for a linear PWM signal:
 
@@ -49,34 +51,36 @@ We can rearrange the equation so that it is expressed in terms of r:
 
 You can generate this in Arduino code using:
 
-    //Setup the output PWM pin
-    const int outputPin = 9;
+{% highlight c++ %}
+//Setup the output PWM pin
+const int outputPin = 9;
 
-    // The number of Steps between the output being on and off
-    const int pwmIntervals = 100;
+// The number of Steps between the output being on and off
+const int pwmIntervals = 100;
 
-    // The R value in the graph equation
-    float R;
+// The R value in the graph equation
+float R;
 
-    void setup() {
-      // set the pin connected to the LED as an output
-      pinMode(outputPin, OUTPUT);
+void setup() {
+  // set the pin connected to the LED as an output
+  pinMode(outputPin, OUTPUT);
 
-      // Calculate the R variable (only needs to be done once at setup)
-      R = (pwmIntervals * log10(2))/(log10(255));
+  // Calculate the R variable (only needs to be done once at setup)
+  R = (pwmIntervals * log10(2))/(log10(255));
 
-    }
+}
 
-    void loop() {
-      int brightness = 0;
+void loop() {
+  int brightness = 0;
 
-      for (int interval = 0; interval <= pwmIntervals; interval++) {
-          // Calculate the required PWM value for this interval step
-          brightness = pow (2, (interval / R)) - 1;
-          // Set the LED output to the calculated brightness
-          analogWrite(outputPin, brightness);
-          delay(40);
-      }
-    }
+  for (int interval = 0; interval <= pwmIntervals; interval++) {
+      // Calculate the required PWM value for this interval step
+      brightness = pow (2, (interval / R)) - 1;
+      // Set the LED output to the calculated brightness
+      analogWrite(outputPin, brightness);
+      delay(40);
+  }
+}
+{% endhighlight %}
 
 This will give you a nice natural fading of the light over as long and as many steps as you like.

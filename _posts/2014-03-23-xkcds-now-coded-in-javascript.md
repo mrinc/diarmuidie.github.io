@@ -47,31 +47,33 @@ To automate the image I first broke it up into two parts:
 
 Using a bit of JS logic I calculated the percentage of the day that had passed since 12 midday, converted this into degrees and used the CSS3 rotate property (I've only tested this in Chrome and Firefox) to rotated the map image the calculated amount. The image will update every 30 seconds while you have this window open.
 
-    updateMap(); // Initial rotation on load
+{% highlight javascript %}
+updateMap(); // Initial rotation on load
 
-    setInterval(function () {
-        updateMap();
-    }, 30000); // Rotate every 30 sec
+setInterval(function () {
+    updateMap();
+}, 30000); // Rotate every 30 sec
 
-    function updateMap() {
+function updateMap() {
 
-        todayDate = new Date();
-        todayDate.setHours(12, 0, 0, 0); // Time at 12 midday today
+    todayDate = new Date();
+    todayDate.setHours(12, 0, 0, 0); // Time at 12 midday today
 
-        elapsedSec = (Date.now() - todayDate) / 1000; // Seconds since midday
+    elapsedSec = (Date.now() - todayDate) / 1000; // Seconds since midday
 
-        UTCOffset = todayDate.getTimezoneOffset() * 60; // Calculate USC offset
+    UTCOffset = todayDate.getTimezoneOffset() * 60; // Calculate USC offset
 
-        elapsedPerc = (elapsedSec + UTCOffset) / 86400; // Percentage of the day that has elapsed
+    elapsedPerc = (elapsedSec + UTCOffset) / 86400; // Percentage of the day that has elapsed
 
-        rotateDeg = Math.round(360 * elapsedPerc); // Convert percentage to degree
+    rotateDeg = Math.round(360 * elapsedPerc); // Convert percentage to degree
 
-        // Update Style with browser specific prefixes
-        mapElement = document.getElementById("map");
-        mapElement.style.webkitTransform = "rotate(" + rotateDeg + "deg)";
-        mapElement.style.transform = "rotate(" + rotateDeg + "deg)";
-        mapElement.style.MozTransform = "rotate(" + rotateDeg + "deg)";
+    // Update Style with browser specific prefixes
+    mapElement = document.getElementById("map");
+    mapElement.style.webkitTransform = "rotate(" + rotateDeg + "deg)";
+    mapElement.style.transform = "rotate(" + rotateDeg + "deg)";
+    mapElement.style.MozTransform = "rotate(" + rotateDeg + "deg)";
 
-    }
+}
+{% endhighlight %}
 
 You can play with the full source on [JSFiddle](http://jsfiddle.net/diarmuidie/wd9b8/).

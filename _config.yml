@@ -25,6 +25,7 @@ url: http://diarmuidie.github.io/
 markdown: redcarpet
 highlighter: pygments
 permalink: "/blog/:title/"
+highlighter: pygments
 
 # Pagination
 paginate: 2
