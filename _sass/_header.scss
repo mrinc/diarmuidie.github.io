@@ -38,12 +38,6 @@
     background-color: #FFF;
 }
 
-.clip-text_one {
-    background-image: url(http://i.imgur.com/KCa8KHY.png);
-}
-
-
-
 .wrapper-masthead {
     text-align: center;
     background-color: $primary-color;
@@ -65,7 +59,8 @@
 }
 
 .site-title {
-
+    display: inline-block;
+    background-image: url(/assets/img/leather-nunchuck.png);
 }
 
 .site-nav {

@@ -15,7 +15,7 @@ This method also lets you change the template directory after the Twig instance 
 
 First step is to make sure you have Slim, Slim-views and Twig installed through your `composer.json` file:
 
-{% highlight php %}
+{% highlight JSON %}
 {
     "require": {
         "slim/slim": "2.*",
