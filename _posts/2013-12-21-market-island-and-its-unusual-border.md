@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Märket Island and it's Unusual Border'
+title: 'Märket Island and it''s Unusual Border'
 redirect_from: /blog/post/market-island-and-its-unusual-border
 tags:
     - Article
