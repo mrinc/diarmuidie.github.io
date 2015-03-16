@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Multiple Twig Template Folders with Slim Framework'
-redirect_from: blog/post/multiple-twig-template-folders-with-slim-framework
+redirect_from: /blog/post/multiple-twig-template-folders-with-slim-framework/
 tags:
     - Guide
     - php

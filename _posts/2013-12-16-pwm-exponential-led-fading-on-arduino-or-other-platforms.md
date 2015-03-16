@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'PWM Exponential LED Fading on Arduino (or other platforms)'
-redirect_from: /blog/post/pwm-exponential-led-fading-on-arduino-or-other-platforms
+redirect_from: /blog/post/pwm-exponential-led-fading-on-arduino-or-other-platforms/
 tags:
     - Arduino
     - Guide

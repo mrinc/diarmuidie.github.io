@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'XKCD''s "Now" Coded in JavaScript'
-redirect_from: /blog/post/xkcds-now-coded-in-javascript
+redirect_from: /blog/post/xkcds-now-coded-in-javascript/
 tags:
     - Guide
     - Playground

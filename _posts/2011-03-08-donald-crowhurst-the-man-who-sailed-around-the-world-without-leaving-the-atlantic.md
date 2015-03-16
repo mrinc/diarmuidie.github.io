@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Donald Crowhurst: The Man Who Sailed Around The World Without Leaving The Atlantic'
-redirect_from: /blog/post/donald-crowhurst-the-man-who-sailed-around-the-world-without-leaving-the-atlantic
+redirect_from: /blog/post/donald-crowhurst-the-man-who-sailed-around-the-world-without-leaving-the-atlantic/
 tags:
     - Article
 

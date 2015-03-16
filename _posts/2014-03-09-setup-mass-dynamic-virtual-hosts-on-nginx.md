@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Setup Mass Dynamic Virtual Hosts on Nginx'
-redirect_from: /blog/post/setup-mass-dynamic-virtual-hosts-on-nginx
+redirect_from: /blog/post/setup-mass-dynamic-virtual-hosts-on-nginx/
 tags:
     - Guide
 

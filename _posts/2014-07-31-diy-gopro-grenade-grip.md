@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'DIY GoPro Grenade Grip'
-redirect_from: /blog/post/diy-gopro-grenade-grip
+redirect_from: /blog/post/diy-gopro-grenade-grip/
 tags:
     - Guide
 

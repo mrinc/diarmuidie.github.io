@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Experiences with Buying Cheap Arduinos and shields on eBay'
-redirect_from: /blog/post/experiences-with-buying-cheap-arduinos-and-shields-on-ebay
+redirect_from: /blog/post/experiences-with-buying-cheap-arduinos-and-shields-on-ebay/
 tags:
     - Guide
 
