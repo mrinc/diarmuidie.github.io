@@ -1,0 +1,7 @@
+{
+  "name": "diarmuid.ie",
+  "dependencies": {
+    "skeleton-scss": "*",
+    "jquery": "~2.1.3"
+  }
+}
