@@ -1,0 +1,38 @@
+/* Clip text element */
+.clip-text {
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+// Check for backgroundtext modernizr class before clipping
+.backgroundcliptext .clip-text {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+/* Background */
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+/* Text Background */
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+}
