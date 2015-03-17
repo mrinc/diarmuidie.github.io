@@ -36,7 +36,7 @@ function updateMap() {
 </script>
 <style>#clock {background-image: url("/media/xkcd-clock/clock.png");width:706px;height:705px;overflow:hidden;}</style>
 <figcaption markdown="1">
-Images by <a href="https://xkcd.com/1335/">XKCD.com</a>". Code by <a href="https://diarmuid.ie/blog/post/xkcds-now-coded-in-javascript">Diarmuid.ie</a>.
+Images by <a href="https://xkcd.com/1335/">XKCD.com</a>. Code by <a href="https://diarmuid.ie/blog/post/xkcds-now-coded-in-javascript">Diarmuid.ie</a>.
 </figcaption>
 </figure>
 

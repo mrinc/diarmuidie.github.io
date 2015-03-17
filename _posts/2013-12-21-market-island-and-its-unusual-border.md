@@ -7,7 +7,9 @@ tags:
 
 ---
 _At work I did a course on improving my presentation skills. It was a two half-day course and on the second day we had to give a short (3 minute) presentation on a topic of our choice. I had just recently read a Wikipedia article about Märket Island and I wanted to share the story with the group. I've taken the content of my talk and written it up here. My slides are attached below if you want to take a look._
+
 ***
+
 Märket Island is a small rocky 3.3 hectare skerry located half way between the Gulf of Bothnia and the Baltic Sea. The island is completely void of vegetation and is uninhabited. All in all it is a rather uninteresting island save for one unusual fact. But first a bit of history on the island.
 
 <figure markdown="1">

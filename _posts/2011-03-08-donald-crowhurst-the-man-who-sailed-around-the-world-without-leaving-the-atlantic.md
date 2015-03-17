@@ -4,13 +4,15 @@ title: 'Donald Crowhurst: The Man Who Sailed Around The World Without Leaving Th
 redirect_from: /blog/post/donald-crowhurst-the-man-who-sailed-around-the-world-without-leaving-the-atlantic/
 tags:
     - Article
-
+excerpt: "Donald Crowhurst Was a British Businessman and amateur sailor who died while competing in the Sunday Times Golden Globe Race, a race to be the first to sail single headedly non-stop around the world. Faced with mounting financial and technical challenges prior to the start of the race Crowhurst departed from Teignmouth, Devon, on the last day permitted by the rules: 31 October 1968. From the beginning of the race Crowhurst realised that his boat was not suitable for the race and began reporting false positions, in an attempt to appear to circumnavigate the world without actually doing so."
 ---
 ![Donald Crowhurst](/media/donald-crowhurst.jpg)
 
 _I Wrote this essay for a college course on Project Management. The guidelines stated we had to write about a project that failed._
+
 ***
-Donald Crowhurst Was a British Businessman and amateur sailor who died while competing in the Sunday Times Golden Globe Race, a race to be the first to sail single headedly non-stop around the world. Faced with mounting financial and technical challenges prior to the start of the race Crowhurst departed from Teignmouth, Devon, on the last day permitted by the rules: 31 October 1968. From the beginning of the race Crowhurst realised that his boat was not suitable for the race and began reporting false positions, in an attempt to appear to circumnavigate the world without actually doing so. Four months into the race Crowhurst's boat was found drifting in the north Atlantic with no one aboard. Evidence from his logbooks indicates that his race ended in insanity and apparent suicide (Hall _and_ Tomalin 1970).<span id="more-201960846"></span>
+
+Donald Crowhurst Was a British Businessman and amateur sailor who died while competing in the Sunday Times Golden Globe Race, a race to be the first to sail single headedly non-stop around the world. Faced with mounting financial and technical challenges prior to the start of the race Crowhurst departed from Teignmouth, Devon, on the last day permitted by the rules: 31 October 1968. From the beginning of the race Crowhurst realised that his boat was not suitable for the race and began reporting false positions, in an attempt to appear to circumnavigate the world without actually doing so. Four months into the race Crowhurst's boat was found drifting in the north Atlantic with no one aboard. Evidence from his logbooks indicates that his race ended in insanity and apparent suicide (Hall _and_ Tomalin 1970).
 
 During early 1968 the Sunday Times newspaper was looking to build upon their successful sponsorship of Francis Chichester's solo circumnavigation attempt the previous year. Chichester sailed singlehanded around the world, stopping in Australia on the way to restock and repair his boat. Sir Robin Knox-Johnston, a British merchant marine office stated that a non-stop solo circumnavigation was "about all there's left to do now" (Knox-Johnston 1970). Seeing an opportunity, The Sunday Times decided to offer the Golden Globe trophy as a prize for the first person to sail single-handed, non-stop, around the world. At the time it was wildly held that neither a yachtsman nor his boat could survive the stress and strain of a non-stop round the world race (Knox-Johnston 1970).
 
