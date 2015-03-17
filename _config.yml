@@ -30,7 +30,7 @@ permalink: "/blog/:title/"
 highlighter: pygments
 
 # Pagination
-paginate: 2
+paginate: 6
 paginate_path: "/blog/page:num/"
 
 # Set the Sass partials directory, as we're using @imports
