@@ -1,10 +1,18 @@
+.browserupgrade {
+    color: #a94442;
+    background-color: #f2dede;
+    border-bottom: 1px solid #ebccd1;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
 .wrapper-masthead {
     text-align: center;
     background-color: $primary-color;
     width: 100%;
     padding-top: 40px;
     padding-bottom: 20px;
-    margin-bottom: 50px;
     border-bottom: 5px solid $secondary-color;
     color: #FFFFFF;
 }
@@ -15,13 +23,16 @@
     }
 }
 
+$title-color: #FFF0CB;
+
 // If  background clip text is available use a background image
 .backgroundcliptext .site-title {
     display: inline-block;
     background-image: url(/assets/img/leather-nunchuck.png);
+    background-color: $title-color;
 }
 .site-title {
-    color: #FFF0CB;
+    color: $title-color;
     font-size: 5rem;
     font-family: $title-font-family;
     // Larger than mobile
@@ -37,7 +48,7 @@
         font-size: 14rem;
     }
     &:hover {
-        color: #FFF0CB;        
+        color: #FFF0CB;
     }
 }
 

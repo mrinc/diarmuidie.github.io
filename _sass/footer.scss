@@ -1,8 +1,11 @@
-.pagination
-
 .wrapper-footer {
     width: 100%;
     margin: 20px 0  20px 0;
+    .footer {
+        color: $light-grey;
+        text-align: center;
+        font-size: 1.5rem;
+    }
 }
 
 .pagination {
@@ -19,7 +22,9 @@
     .previous {
         text-align: right;
     }
-    .next, .previous {
-
+    @media (#{$bp-larger-than-mobile}) {
+        .next, .previous {
+            text-align: center;
+        }
     }
 }
