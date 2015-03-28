@@ -21,6 +21,10 @@ url: http://diarmuidie.github.io/
 # then add in the baseurl here, like this: "/repository-name"
 # baseurl: ""
 
+# Site config options
+google_analytics: 'UA-45221135-1'
+disqus: 'diarmuidie'
+
 # Post config
 markdown: redcarpet
 highlighter: pygments
