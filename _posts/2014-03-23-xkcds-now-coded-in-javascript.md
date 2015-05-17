@@ -45,7 +45,7 @@ To automate the image I first broke it up into two parts:
 - [map.png](/media/xkcd-clock/map.png) This is the part of the image that will rotate as the day goes on.
 - [clock.png](/media/xkcd-clock/clock.png) This is the outer ring that remains stationary and shows the time in each country.
 
-Using a bit of JS logic I calculated the percentage of the day that had passed since 12 midday, converted this into degrees and used the CSS3 rotate property (I've only tested this in Chrome and Firefox) to rotated the map image the calculated amount. The image will update every 30 seconds while you have this window open.
+Using a bit of JS logic I calculated the percentage of the day that had passed since 12 midday, converted this into degrees and used the CSS3 rotate property (I've only tested this in Chrome and Firefox) to rotate the map image the calculated amount. The image will update every 30 seconds while you have this window open.
 
 {% highlight javascript %}
 updateMap(); // Initial rotation on load
