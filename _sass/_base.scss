@@ -1,0 +1,10 @@
+ol {
+    list-style-type: decimal;
+}
+ul {
+    list-style-type: disc;
+}
+ol, ul {
+    list-style-position:outside;
+    margin-left: 2.5rem;
+}
