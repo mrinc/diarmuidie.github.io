@@ -2,7 +2,8 @@
 layout: post
 title: 'Deploying PHP Workers to AWS Elastic Beanstalk'
 tags:
-    - Article
+    - Guide
+excerpt: "AWS Elastic Beanstalk is an AWS service that lets you automatically deploy load balanced PHP applications to EC2. One of the lesser know features is the ability to setup EB as a worker to handle long running or computationally intensive tasks (Think image processing/bulk mail sending etc.). EB Workers listen to a SQS queue and automatically run any jobs you put onto the queue. In this post I'll show you how to setup your own EB PHP worker."
 ---
 
 ![Elastic Beanstalk Logo](/media/elastic-beanstalk/elastic-beanstalk.png)
