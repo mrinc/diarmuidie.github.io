@@ -51,7 +51,7 @@ If you include a composer.json file in the root of your project EB will automati
 Below is a basic worker `index.php` file:
 
 ```php
-</php
+<?php
 
 // Include the composer autoloader
 require_once 'vendor/autoload.php';
