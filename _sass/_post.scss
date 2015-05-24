@@ -8,7 +8,7 @@ code {
 
 .stamp {
     position: relative;
-    margin: 0 auto 1em;
+    margin: 1em auto;
     padding: 1em 1em .25em 1em;
     text-align: center;
     text-transform: uppercase;
@@ -33,16 +33,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post{
+    h1 {
+        margin: 0 auto;
+    }
+    .date {
+        color: $light-grey;
+        text-align: center;
+        margin: 1em auto 3em auto;
+    }
     img {
         max-width: 100%;
         margin: auto;
         display: block;
     }
-    p {
-        //text-align: justify;
-    }
-    .date {
-        color: $light-grey;
+    p, .entry {
+        text-align: justify;
     }
 }
 .comments {

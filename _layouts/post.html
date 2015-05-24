@@ -7,7 +7,7 @@ layout: default
     <h1 class="stamp">{{ page.title }}</h1>
 
     <div class="date">
-        Written on {{ page.date | date: "%B %e, %Y" }}
+        Written on <time datetime="{{ page.date | date_to_xmlschema}}" title="{{ page.date | date_to_rfc822 }}">{{ page.date | date: "%B %e, %Y" }}</time>
     </div>
 
     <div class="entry">
