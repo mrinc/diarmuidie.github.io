@@ -6,7 +6,10 @@
 name: Diarmuid.ie
 
 # Short bio or description (displayed in the header)
-description: The online home of diarmuid
+tagline: The online home of diarmuid
+
+# Short bio or description (displayed in the header)
+description: The blog and personal site of Diarmuid.ie, where I write up blog posts on topics that interest me like Tech, PHP, Javascript, Web Development, DIY and Trivia.
 
 # Set the timezone used for posts
 timezone: Europe/Dublin
